@@ -39,7 +39,7 @@ test("One Yen should be 0.0055 pounds", function() {
     // This is the comparison for the unit test
      expect(fromYenToPound(5)).toBe(expected);}) // 1 yen is 0.0055 pounds, then 5 yen should be (5 * 0.0055)
 
-     // last test 
+     // Last test 
 test("One Dollar should be 146.26  Yen", function() {
     // Import the function from app.js
     const { fromDollarToYen } = require('./app.js');
@@ -51,4 +51,4 @@ test("One Dollar should be 146.26  Yen", function() {
     const expected = 5 * (156.5/1.07); 
     
     // This is the comparison for the unit test
-     expect(fromDollarToYen(5)).toBe(expected);}) // 1 yen is 0.0055 pounds, then 5 yen should be (5 * 0.0055)
+     expect(fromDollarToYen(5)).toBe(expected);}) // 1 yen is 146.26 yen, then 5 yen should be (156.5/1.07); 
